@@ -224,6 +224,7 @@ footer {
 .background-alt {
     background: #f2f2f5;
 }
+
 #abcd {
     /* position: fixed; */
     top: 0;
@@ -254,14 +255,20 @@ footer {
 #lead-content h1,
 #lead-content h2 {
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 #lead-content h1 {
     color: #fff;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 0.9em;
+    /* line-height: 1; */
 }
 #lead-content h2 {
     color: #a0cfee;
