@@ -192,7 +192,7 @@ for (i = 0; i < num_circles; i++) {
     }
     var dx = (Math.random() - 0.5) * speed_factor;
     var dy = (Math.random() - 0.5) * speed_factor;
-    circleArray.push(new Circle(x, y, dx, dy, r, "blue"));
+    circleArray.push(new Circle(x, y, dx, dy, r, getRandomColor()));
 }
 
 function animate() {
