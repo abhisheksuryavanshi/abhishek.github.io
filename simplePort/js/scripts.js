@@ -9,7 +9,7 @@
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
 */
-console.log("hello");
+
 (function ($) {
     // Remove no-js class
     $("html").removeClass("no-js");
@@ -111,96 +111,17 @@ console.log("hello");
     });
 })(jQuery);
 
-console.log("bye");
+var i = 0;
+var txt = "Software Engineer | Innovator | PUBG Gawd"; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function getRandomColor() {
-    var letters = "0123456789ABCDEF";
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-function randomFromArray() {
-    var colors = ["#e4e5eb", "#ed8805", "#302e2c"];
-    var seed = Math.floor(Math.random() * colors.length);
-    return colors[seed];
-}
-
-var canvas = document.querySelector("canvas");
-console.log(canvas);
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-var c = canvas.getContext("2d");
-var i, j;
-var flag = false;
-var height = 0;
-
-class Circle {
-    constructor(x, y, dx, dy, radius, color) {
-        this.x = x;
-        this.y = y;
-        this.dx = dx;
-        this.dy = dy;
-        this.radius = radius;
-        this.color = color;
-        console.log(
-            "x = " + this.x + "radius = " + this.radius + "dx = " + this.dx
-        );
-    }
-    draw() {
-        c.beginPath();
-        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, flag);
-        flag = !flag;
-        c.strokeStyle = "grey";
-        c.stroke();
-        // c.fillStyle = this.color;
-        // c.fill();
-    }
-    update() {
-        if (
-            this.x + this.radius >= window.innerWidth ||
-            this.x - this.radius <= 0
-        ) {
-            this.dx = -1 * this.dx;
-        }
-        if (
-            this.y + this.radius >= window.innerHeight ||
-            this.y - this.radius <= 0
-        ) {
-            this.dy = -1 * this.dy;
-        }
-        this.x += this.dx;
-        this.y += this.dy;
-        this.draw();
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        console.log("here");
+        console.log(document.getElementById("demo").innerHTML);
+        i++;
+        setTimeout(typeWriter, speed);
     }
 }
-
-var circleArray = [];
-var num_circles = 20;
-var speed_factor = 2;
-var r = 50;
-for (i = 0; i < num_circles; i++) {
-    var x = Math.random() * (innerWidth - r);
-    while (x - r <= 0) {
-        x = Math.random() * (innerWidth - r);
-    }
-    var y = Math.random() * (innerHeight - r);
-    while (y - r <= 0) {
-        y = Math.random() * (innerHeight - r);
-    }
-    var dx = (Math.random() - 0.5) * speed_factor;
-    var dy = (Math.random() - 0.5) * speed_factor;
-    circleArray.push(new Circle(x, y, dx, dy, r, getRandomColor()));
-}
-
-function animate() {
-    requestAnimationFrame(animate);
-    c.clearRect(0, 0, innerWidth, innerHeight);
-    for (i = 0; i < num_circles; i++) {
-        circleArray[i].update();
-    }
-}
-
-animate();
+typeWriter();
