@@ -229,19 +229,38 @@ footer {
     /* position: fixed; */
     top: 0;
     left: 0;
-    filter: blur(2px);
+    /* filter: blur(2px); */
 }
 #lead {
     position: relative;
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background-color: black;
-    color: blue;
-    background-size: cover;
-    /* padding: 15px; */
-    overflow: hidden;
+    background: linear-gradient(
+        0deg,
+        #4484ce,
+        #1ad7c0,
+        #ff9b11,
+        #9b59b6,
+        #ff7f7f
+    );
+    background-size: 1000% 1000%;
+    animation: AnimationName 100s ease infinite;
+    height: 100%;
 }
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 #lead-content {
     position: absolute;
     z-index: 10;

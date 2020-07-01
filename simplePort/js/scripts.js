@@ -153,10 +153,10 @@ class Circle {
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, flag);
         flag = !flag;
-        c.strokeStyle = "black";
+        c.strokeStyle = "grey";
         c.stroke();
-        c.fillStyle = this.color;
-        c.fill();
+        // c.fillStyle = this.color;
+        // c.fill();
     }
     update() {
         if (
@@ -178,10 +178,10 @@ class Circle {
 }
 
 var circleArray = [];
-var num_circles = 100;
+var num_circles = 20;
 var speed_factor = 2;
+var r = 50;
 for (i = 0; i < num_circles; i++) {
-    var r = 15;
     var x = Math.random() * (innerWidth - r);
     while (x - r <= 0) {
         x = Math.random() * (innerWidth - r);
@@ -192,7 +192,7 @@ for (i = 0; i < num_circles; i++) {
     }
     var dx = (Math.random() - 0.5) * speed_factor;
     var dy = (Math.random() - 0.5) * speed_factor;
-    circleArray.push(new Circle(x, y, dx, dy, r, "blue"));
+    circleArray.push(new Circle(x, y, dx, dy, r, getRandomColor()));
 }
 
 function animate() {
