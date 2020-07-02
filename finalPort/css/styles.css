@@ -242,11 +242,49 @@ footer {
     );
     background-size: 1500% 1500%;
     animation: GradientShift 50s ease infinite;
+    -webkit-animation: GradientShift 50s ease infinite;
+    -moz-animation: GradientShift 50s ease infinite;
+    -o-animation: GradientShift 50s ease infinite;
     padding: 15px;
     overflow: hidden;
 }
 
+@keyframes GradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 @-webkit-keyframes GradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@-moz-keyframes GradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+@-o-keyframes GradientShift {
     0% {
         background-position: 0% 0%;
     }
