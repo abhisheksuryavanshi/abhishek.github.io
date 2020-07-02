@@ -781,10 +781,10 @@ li {
 .icons {
     opacity: 0;
     padding: 6%;
-    -webkit-animation: fadein 500s;
-    -moz-animation: fadein 500s;
-    -o-animation: fadein 500s;
-    animation: fadein 500s;
+    -webkit-animation: fadein 800s;
+    -moz-animation: fadein 800s;
+    -o-animation: fadein 800s;
+    animation: fadein 800s;
     animation-delay: 2.3s;
 }
 
@@ -868,4 +868,12 @@ li {
         display: block;
         opacity: 1;
     }
+}
+
+.heart {
+    color: #e90606;
+}
+
+.bold {
+    font-weight: bold;
 }
