@@ -18,7 +18,7 @@ body.active {
     overflow: hidden;
     z-index: -1;
 }
-img {
+.avatar {
     border-radius: 50%;
     width: 70%;
     height: 70%;
@@ -779,7 +779,10 @@ li {
 }
 
 .icons {
-    padding: 5%;
+    opacity: 0;
+    padding: 6%;
+    animation: fadein 500s;
+    animation-delay: 2.3s;
 }
 
 .icons a {
@@ -794,4 +797,21 @@ li {
 .icons i:hover {
     transform: scale(2.3);
     color: #374054;
+}
+
+@keyframes fadein {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    0.1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
