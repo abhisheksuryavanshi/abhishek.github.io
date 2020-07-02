@@ -241,10 +241,10 @@ footer {
         #ff7f7f
     );
     background-size: 1500% 1500%;
-    animation: GradientShift 50s ease infinite;
     -webkit-animation: GradientShift 50s ease infinite;
     -moz-animation: GradientShift 50s ease infinite;
     -o-animation: GradientShift 50s ease infinite;
+    animation: GradientShift 50s ease infinite;
     padding: 15px;
     overflow: hidden;
 }
