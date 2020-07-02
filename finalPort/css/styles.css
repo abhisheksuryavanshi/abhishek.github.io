@@ -241,7 +241,7 @@ footer {
         #ff7f7f
     );
     background-size: 1500% 1500%;
-    animation: GradientShift 70s ease infinite;
+    animation: GradientShift 50s ease infinite;
     padding: 15px;
     overflow: hidden;
 }
