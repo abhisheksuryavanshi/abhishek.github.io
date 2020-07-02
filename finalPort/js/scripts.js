@@ -112,7 +112,7 @@
 })(jQuery);
 
 var i = 0;
-var txt = "Software Engineer | Innovator | PUBG Gawd"; /* The text */
+var txt = "Software Engineer | Innovator | Front End Developer"; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
