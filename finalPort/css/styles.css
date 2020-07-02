@@ -230,8 +230,8 @@ footer {
 #lead {
     position: relative;
     height: 100vh;
-    min-height: 500px;
-    max-height: 1080px;
+    /* min-height: 500px;
+    max-height: 1080px; */
     background: linear-gradient(
         45deg,
         #4484ce,
@@ -251,13 +251,13 @@ footer {
 
 @keyframes GradientShift {
     0% {
-        background-position: 0% 0%;
+        background-position: 0% 100%;
     }
     50% {
-        background-position: 100% 100%;
+        background-position: 100% 0%;
     }
     100% {
-        background-position: 0% 0%;
+        background-position: 0% 100%;
     }
 }
 
