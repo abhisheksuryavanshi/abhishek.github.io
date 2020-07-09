@@ -11,7 +11,7 @@
     Gulp and send to the /css folder which is then loaded on the page.
 */
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
 body.active {
@@ -346,7 +346,7 @@ footer {
     -moz-animation: fadein 800s;
     -o-animation: fadein 800s;
     animation: fadein 800s;
-    animation-delay: 2s;
+    animation-delay: 2.4s;
 }
 
 /* #lead-down span {
@@ -377,6 +377,7 @@ footer {
 }
 #about {
     padding: 75px 15px;
+    min-height: 100%;
     border-bottom: 1px solid #dcd9d9;
 }
 #about h2 {
@@ -823,38 +824,38 @@ li {
 }
 
 .fullname {
-    /* font-family: "Arapey", serif; */
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Red Hat Text", sans-serif; */
 
     /* font-size: 1.5em; */
-    font-size: 1.8em;
+    font-size: 1.75em;
     opacity: 0;
-    -webkit-animation: fadein 800s;
-    -moz-animation: fadein 800s;
-    -o-animation: fadein 800s;
-    animation: fadein 800s;
-    animation-delay: 0.5s;
+    -webkit-animation: fadein 10000s;
+    -moz-animation: fadein 10000s;
+    -o-animation: fadein 10000s;
+    animation: fadein 10000s;
+    animation-delay: 0.6s;
 }
 
 .qualities {
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Montserrat", sans-serif;
     opacity: 0;
     font-size: 0.5;
-    -webkit-animation: fadein 800s;
-    -moz-animation: fadein 800s;
-    -o-animation: fadein 800s;
-    animation: fadein 800s;
-    animation-delay: 1s;
+    -webkit-animation: fadein 10000s;
+    -moz-animation: fadein 10000s;
+    -o-animation: fadein 10000s;
+    animation: fadein 10000s;
+    animation-delay: 1.2s;
 }
 
 .icons {
     opacity: 0;
     padding: 6%;
-    -webkit-animation: fadein 800s;
-    -moz-animation: fadein 800s;
-    -o-animation: fadein 800s;
-    animation: fadein 800s;
-    animation-delay: 1.5s;
+    -webkit-animation: fadein 10000s;
+    -moz-animation: fadein 10000s;
+    -o-animation: fadein 10000s;
+    animation: fadein 10000s;
+    animation-delay: 1.8s;
 }
 
 .icons a {
@@ -862,12 +863,12 @@ li {
 }
 
 .icons i {
-    transform: scale(2.3);
+    transform: scale(3);
     color: #e4e4ea;
 }
 
 .icons i:hover {
-    transform: scale(2.3);
+    transform: scale(3.5);
     color: #374054;
 }
 
@@ -877,7 +878,7 @@ li {
         opacity: 0;
     }
 
-    0.1% {
+    0.01% {
         display: block;
         opacity: 1;
     }
@@ -894,7 +895,7 @@ li {
         opacity: 0;
     }
 
-    0.1% {
+    0.01% {
         display: block;
         opacity: 1;
     }
@@ -911,7 +912,7 @@ li {
         opacity: 0;
     }
 
-    0.1% {
+    0.01% {
         display: block;
         opacity: 1;
     }
@@ -928,7 +929,7 @@ li {
         opacity: 0;
     }
 
-    0.1% {
+    0.01% {
         display: block;
         opacity: 1;
     }
