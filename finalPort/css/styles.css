@@ -1003,7 +1003,7 @@ li {
     background: transparent;
     /* padding: 1%; */
     margin-bottom: 3%;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-right: 10%;
     /* border: 1px solid #dcd9d9; */
 }
@@ -1026,10 +1026,42 @@ li {
     margin-left: 42%;
 }
 
-/* #experience > div {
+/* .prev {
+    margin-right: 5%;
     display: inline-block;
-    margin-left: 18%;
+    position: absolute;
+    left: 80%;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    margin-right: 5%;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
 } */
+
+.next {
+    position: absolute;
+    right: 7%;
+    top: 210%;
+    font-size: 200%;
+}
+
+.prev {
+    position: absolute;
+    left: 5%;
+    top: 210%;
+    font-size: 200%;
+}
 
 #content-section {
     left: 10px;
@@ -1049,3 +1081,26 @@ li {
     width: 70%;
     display: none;
 }
+
+/* Next & previous buttons */
+/* .prev,
+.next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+} */
