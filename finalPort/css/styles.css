@@ -1049,17 +1049,21 @@ li {
     border-radius: 0 3px 3px 0;
 } */
 
+#experience {
+    position: relative;
+}
+
 .next {
     position: absolute;
-    right: 7%;
-    top: 210%;
+    right: 5%;
+    top: 50%;
     font-size: 200%;
 }
 
 .prev {
     position: absolute;
     left: 5%;
-    top: 210%;
+    top: 50%;
     font-size: 200%;
 }
 
