@@ -80,7 +80,7 @@
                 <!-- <h2 id="demo"></h2> -->
                 <h2>
                     <div class="qualities">
-                        Software Engineer | Front-End Developer
+                        Software Engineer
                     </div>
                 </h2>
                 <br />
@@ -156,26 +156,30 @@
             </div>
         </div>
         <!-- End #about -->
-
         <div id="experience" class="background-alt">
-            <h2 class="heading">Experience</h2>
-            <div id="experience-timeline">
-                <div data-date="July 2020">
-                    <h3>Microsoft</h3>
-                    <h4>SDE</h4>
-                    <p>
-                        asdasfsrgerbf
-                    </p>
-                </div>
-
-                <div data-date="May 2019 – July 2019">
-                    <h3>JP Morgan Chase & Co.</h3>
-                    <h4>Software Engineering Intern</h4>
-                    <p>
-                        Worked on some ML shit
-                    </p>
+            <h2 class="heading exp-heading">Experience</h2>
+            <br>
+            <div class = "toKeepInline"><button id="switch" onclick="nextSlide()">Next</button></div>
+            <div class="exp-box toKeepInline">
+                <div id="box-one">
+                    <div id="bgimage"></div>
+                    <div id="content">
+                        <div id="title-line">
+                            <h1 id="companyName">Microsoft</h1>
+                        </div>
+                        <div id="content-section">
+                            <h2 id="designation">Software Developer</h2>
+                            <h2 id="duration">2020-Present</h2>
+                            <p>
+                                <h3 id="description">asdasfsrgerbf</h3>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <img class="msimage" src="images/jp.png" /> -->
+                    <!-- <div id="lead-overlay"></div> -->
                 </div>
             </div>
+            <div class = "toKeepInline"><button id="switch" onclick="prevSlide()">Prev</button></div>
         </div>
         <!-- End #experience -->
 
@@ -246,7 +250,7 @@
         </footer>
         <!-- End footer -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

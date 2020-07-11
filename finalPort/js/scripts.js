@@ -111,17 +111,79 @@
     });
 })(jQuery);
 
-var i = 0;
-var txt = "Software Engineer | Innovator | Front End Developer"; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+// $(document).ready(function () {
+//     $("#switch").click(function () {
+//         $("#content").animate(
+//             { left: "+=100%", opacity: "0" },
+//             1000,
+//             "swing",
+//             function () {
+//                 $(this).remove();
+//             }
+//         );
+//         // $("#box-one").slideDown();
+//     });
+// });
 
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        console.log("here");
-        console.log(document.getElementById("demo").innerHTML);
-        i++;
-        setTimeout(typeWriter, speed);
+// $(document).ready(function () {
+//     $("#switch").click(showSlide());
+// });
+
+var count = 0;
+
+var contents = [""];
+var bgimages = ["url('images/micro.jpg')", "url('images/ms.png')"];
+
+var details = [
+    {
+        CompanyName: "Microsoft",
+        Designation: "Software Developer",
+        Description: "poghtkhotykh",
+        Duration: "July 2020 - Present",
+        bgImage: "url('images/microsoft.png')",
+    },
+    {
+        CompanyName: "JP Morgan Chase & Co.",
+        Designation: "Software Development Intern",
+        Description: "asdasdawfw",
+        Duration: "May 2019 - Jul 2019",
+        bgImage: "url('images/jpmc.png')",
+    },
+];
+
+function nextSlide() {
+    count++;
+    if (count >= bgimages.length) {
+        count = 0;
     }
+    document.getElementById("bgimage").style.backgroundImage =
+        details[count].bgImage;
+    content = document.getElementById("content");
+    content.querySelector("#companyName").innerHTML =
+        details[count].CompanyName;
+    content.querySelector("#designation").innerHTML =
+        details[count].Designation;
+    content.querySelector("#duration").innerHTML = details[count].Duration;
+    content.querySelector("#description").innerHTML =
+        details[count].Description;
 }
-typeWriter();
+
+function prevSlide() {
+    var slide = document.getElementById("bgimage");
+    count--;
+    if (count < 0) {
+        count = bgimages.length - 1;
+    }
+    document.getElementById("bgimage").style.backgroundImage =
+        details[count].bgImage;
+    content = document.getElementById("content");
+    content.querySelector("#companyName").innerHTML =
+        details[count].CompanyName;
+    content.querySelector("#designation").innerHTML =
+        details[count].Designation;
+    content.querySelector("#duration").innerHTML = details[count].Duration;
+    content.querySelector("#description").innerHTML =
+        details[count].Description;
+}
+
+// Load element data from json file!
